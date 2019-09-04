@@ -4,5 +4,10 @@ compiler:
  - clang
  - gcc
 script:
- - gcc -o test test.c
+ - gcc -o test sorting.c
+ - gcc -o test sort.c
+ - gcc -o test biswa_quicksort.c
+ - gcc -o test bubble sort.c
+ - gcc -o test Insertion sort (ascending).c
+ - gcc -o test sorting_mimansha.c
  - ./test 
