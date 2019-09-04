@@ -24,10 +24,11 @@ int main()
  
 void mergesort(int a[],int i,int j)
 {
-	int mid;
+	
 		
 	if(i<j)
 	{
+		int mid;
 		mid=(i+j)/2;
 		mergesort(a,i,mid);		//left recursion
 		mergesort(a,mid+1,j);	//right recursion
