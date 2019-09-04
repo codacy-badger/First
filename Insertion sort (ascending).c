@@ -2,20 +2,20 @@
 
 int main()
 {
-  int n, array[1000], c, d, t;
+  int n, array[1000], t;
 
   printf("Enter number of elements\n");
   scanf("%d", &n);
 
   printf("Enter %d integers\n", n);
 
-  for (c = 0; c < n; c++)
+  for (int c = 0; c < n; c++)
     scanf("%d", &array[c]);
 
   for (c = 1 ; c <= n - 1; c++) {
     d = c;
 
-    while ( d > 0 && array[d-1] > array[d]) {
+    while ( int d > 0 && array[d-1] > array[d]) {
       t          = array[d];
       array[d]   = array[d-1];
       array[d-1] = t;
